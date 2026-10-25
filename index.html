@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Laiba Mudassir — Frontend Developer. Explore my skills, education, and projects built with HTML5, CSS3, and JavaScript.">
+  <meta name="author" content="Laiba Mudassir">
+  <title>Laiba Mudassir | Frontend Developer Portfolio</title>
+
+  <!-- Google Fonts (optional enhancement — falls back to system fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e8a8c8'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <!-- ===== Hidden checkbox that powers the mobile menu (pure HTML/CSS) ===== -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+
+  <!-- =========================== NAVBAR =========================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="brand">Laiba<span class="brand-accent">.</span></a>
+
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =========================== HOME / HERO =========================== -->
+    <section id="home" class="hero">
+      <div class="hero-watercolor hero-watercolor--one" aria-hidden="true"></div>
+      <div class="hero-watercolor hero-watercolor--two" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hello, I&rsquo;m</p>
+          <h1 class="hero-name">Laiba Mudassir</h1>
+          <p class="hero-tagline">Frontend Developer</p>
+          <p class="hero-punchline" aria-hidden="true">
+            <span class="tw-line tw-line-1">Not just websites &mdash; digital experiences</span><span
+              class="tw-line tw-line-2">Clean, responsive, intuitive.</span>
+          </p>
+          <p class="visually-hidden">
+            Not just websites &mdash; digital experiences. Clean, responsive, intuitive.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <ul class="hero-socials" aria-label="Social profiles">
+            <li>
+              <a href="https://github.com/Laiba-coder-dev" target="_blank" rel="noopener noreferrer" class="social-link"
+                aria-label="GH — GitHub profile">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12"
+                    y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                    font-family="Inter, sans-serif">GH</text>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/laiba-mudassir-345454294" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="in — LinkedIn profile">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor"
+                    stroke-width="1.8" /><text x="12" y="16" text-anchor="middle" font-size="10" font-weight="700"
+                    fill="currentColor" font-family="Inter, sans-serif">in</text>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:laibamudassir97@gmail.com" class="social-link" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor"
+                    stroke-width="1.8" />
+                  <path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="images/profile.jpg" alt="Portrait of Laiba Mudassir, Frontend Developer" class="hero-image"
+              width="900" height="900">
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll-down cue -->
+      <a href="#about" class="hero-scroll-cue" aria-label="Scroll to About section">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- =========================== ABOUT =========================== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Get to know me</p>
+          <h2 class="section-title">About Me</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I&rsquo;m a <strong>Software Engineering graduate</strong> passionate about
+              front-end development and creating modern, responsive, and user-friendly web
+              experiences.
+            </p>
+            <p>
+              With a foundation in software design, database fundamentals, and
+              requirements documentation, I work with <strong>React.js</strong>,
+              <strong>JavaScript</strong>, <strong>Firebase</strong>, and modern development
+              tools to turn ideas into functional digital solutions.
+            </p>
+            <p>
+              I&rsquo;m eager to grow as a front-end developer, explore emerging technologies,
+              and build creative web applications that combine clean design with seamless
+              functionality.
+            </p>
+            <ul class="tech-stack" aria-label="Technologies and tools I work with">
+
+              <!-- C++ -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--cpp" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#00549D"
+                      d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z" />
+                    <path fill="#0086D4"
+                      d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z" />
+                    <path fill="#fff"
+                      d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z" />
+                    <path fill="#fff" d="M82 64h5v5h-5zM89 64h5v5h-5z" />
+                    <path fill="#fff" d="M86 59h5v5h-5z" />
+                    <path fill="#fff" d="M86 69h5v5h-5z" />
+                  </svg>
+                </span>
+                <span class="tech-name">C++</span>
+              </li>
+
+              <!-- C# -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--csharp" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <text x="64" y="90" text-anchor="middle" font-size="76" font-weight="700" fill="#9941BB"
+                      font-family="Inter, 'Segoe UI', sans-serif">C#</text>
+                  </svg>
+                </span>
+                <span class="tech-name">C#</span>
+              </li>
+
+              <!-- JavaScript -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--js" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
+                    <path fill="#323330"
+                      d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.158 5.715 17.527 6.961 18.849 12.239.632 4.486-3.322 5.925-7.206 5.394-3.124-.694-4.750-2.441-6.569-5.637-4.880 2.838-4.880 2.838-9.938 5.769 1.217 2.652 2.355 3.858 4.009 5.423 5.588 5.016 13.089 6.671 20.517 5.562 7.887-1.563 13.507-6.334 14.704-12.701zm-50.81-8.938c-.566-4.959-3.2-8.742-8.477-12.393-3.638-2.461-11.993-5.71-11.993-5.71-.917-3.022-1.277-8.115 2.38-12.441 1.844-2.09 4.756-3.194 7.636-3.271 2.783.05 5.576.9 7.626 2.617l2.022 2.21c1.741 1.844 2.904 3.576 3.697 5.787 2.927-1.7 2.927-1.7 8.997-5.238-1.218-2.736-2.285-3.901-4.286-5.786-5.016-5.09-12.218-7.453-19.421-6.897l-3.617.627c-7.153 1.693-12.762 7.087-13.963 14.062-1.444 8.461 1.39 15.186 8.677 19.966l2.334 1.516c5.96 3.917 10.565 4.877 11.37 8.509.695 4.487-3.476 6.162-7.003 5.764-3.547-.443-6.066-2.335-8.233-5.711l-9.443 5.48c1.743 3.456 3.374 5.003 5.927 7.062 5.902 4.733 14.457 6.162 21.904 4.547 7.905-1.953 14.184-7.965 14.367-17.09z" />
+                  </svg>
+                </span>
+                <span class="tech-name">JavaScript</span>
+              </li>
+
+              <!-- Python -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--python" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#3776AB"
+                      d="M63.391 1.988c-4.266.046-8.361.437-11.961 1.137-10.632 2.071-12.547 6.232-12.547 14.153v10.516h24v3.625h-24c-8.261 0-15.604 4.976-17.719 14.547-2.421 10.937-2.508 17.875-2.508 26.125 0 8.26.094 15.129 2.526 23.375 2.109 9.515 9.454 14.468 17.727 14.468h8.469v-12.5c0-9.223 8.021-17.343 17.5-17.343h24c8.271 0 15-6.729 15-15V30.277c0-7.896-2.012-11.375-6.075-14.913C98.887 12.701 93.897 8.75 93.897 3.777c0-8.271-6.729-15-15-15H63.391zM44.719 9.813c2.875 0 5.219 2.372 5.219 5.281 0 2.875-2.344 5.219-5.219 5.219-2.907 0-5.25-2.344-5.25-5.219 0-2.908 2.343-5.281 5.25-5.281z" />
+                    <path fill="#FFD43B"
+                      d="M84.609 23.502v11.852h23.5c8.271 0 16.407 6.758 16.407 15v25.5c0 8.242-6.695 15.665-14.965 15.843-3.657.079-6.923-.397-10.441-1.438 3.96-3.303 6.938-7.333 6.938-14.405v-25.5c0-7.896-5.265-13.635-13.106-13.635h-13.093v46.126c0 8.242-6.695 14.406-14.966 14.406-8.271 0-15.036-6.164-15.036-14.406 0-8.242 6.765-17.367 15.036-26.266 5.929-6.302 11.041-12.296 11.041-18.328 0-3.486-.431-6.034-1.248-8.242H84.609zM71.633 85.536c2.875 0 5.25 2.372 5.25 5.281 0 2.875-2.375 5.219-5.25 5.219-2.907 0-5.25-2.344-5.25-5.219 0-2.908 2.343-5.281 5.25-5.281z" />
+                  </svg>
+                </span>
+                <span class="tech-name">Python</span>
+              </li>
+
+              <!-- Tailwind -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--tailwind" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path
+                      d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.368-13.532-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.124 71.371 47.863 64 32.004 64z"
+                      fill="#38bdf8" />
+                  </svg>
+                </span>
+                <span class="tech-name">Tailwind</span>
+              </li>
+
+              <!-- Node.js -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--node" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#83CD29"
+                      d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 42 42.061 42 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L20.1 90.73c-.437-.214-.874-.866-.874-1.181V38.407c0-.483.329-1.104.785-1.384l44.083-25.604c.422-.218 1.378-.218 1.378 0l44.087 25.604c.457.28.786.9.786 1.384v51.142c0 .483-.329 1.104-.786 1.384l-44.087 25.604c-.401.213-.957.213-1.378 0l-11.465-6.908c-.329-.169-.793-.169-1.134 0-3.049 1.503-3.596 1.699-6.422 2.772-1.134.484-.632 1.699.218 2.182l15.084 8.924c1.378.862 2.975 1.28 4.576 1.28 1.602 0 3.22-.418 4.576-1.28l44.083-25.604c2.87-1.648 4.953-4.752 4.953-8.083V38.407c0-3.319-2.07-6.422-4.947-8.073z" />
+                    <path fill="#404137"
+                      d="M77.71 52.62c-9.576 0-15.28 4.043-15.28 10.77 0 7.316 5.657 9.338 14.802 10.258 10.951 1.084 11.777 2.707 11.777 4.895 0 3.781-3.019 5.379-10.108 5.379-8.921 0-10.877-2.229-11.557-6.647-.109-.621-.657-1.071-1.278-1.071h-5.751c-.71 0-1.278.578-1.278 1.278 0 7.487 4.087 16.411 19.864 16.411 11.888 0 18.73-4.65 18.73-12.769 0-8.069-5.479-10.199-16.978-11.73-11.62-1.54-12.828-2.303-12.828-5.005 0-2.247 1.018-5.228 9.576-5.228 7.672 0 10.502 1.645 11.668 6.788.128.567.622.979 1.217.979h5.775c.356 0 .695-.154.932-.427.238-.273.34-.636.285-.986-1.468-8.573-7.256-12.75-19.572-12.75z" />
+                  </svg>
+                </span>
+                <span class="tech-name">Node.js</span>
+              </li>
+
+              <!-- Visual Studio Code -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--vscode" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#0065A9"
+                      d="M90.767 127.126a10.273 10.273 0 006.35-.244l25.69-9.852c2.96-1.137 4.993-3.93 4.993-7.17V18.14a7.431 7.431 0 00-4.993-7.17l-25.69-9.853a10.11 10.11 0 00-7.36.244 10.307 10.307 0 00-1.38.779L50.015 38.95 32.195 25.022a6.88 6.88 0 00-8.817.332l-20.05 17.9A6.885 6.885 0 003.327 50a6.885 6.885 0 001-6.75L4.33 50.002c0 1.726.638 3.451 1.913 4.754l15.17 15.12-15.17 15.117c-1.275 1.303-1.913 3.028-1.913 4.754l-.003 6.748c.006 1.787.672 3.394 1.737 4.564l20.052 17.9a6.88 6.88 0 008.817.332l17.82-13.93 38.362 36.802c.48.384.96.704 1.38.778zM97 35.37L67.77 64 97 92.633V35.37z" />
+                  </svg>
+                </span>
+                <span class="tech-name">Visual Studio</span>
+              </li>
+
+              <!-- GitHub -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--github" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.103 64 5.103z"
+                      fill="#24292f" />
+                  </svg>
+                </span>
+                <span class="tech-name">GitHub</span>
+              </li>
+
+              <!-- MySQL -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--mysql" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" role="img">
+                    <path fill="#00618a" d="M2 2h44v9H11v106H2z" />
+                    <path fill="#e48e00" d="M126 2H82v9h35v106h9z" />
+                    <path fill="#00618a" d="M11 108h106v9H11z" />
+                    <path fill="#e48e00" d="M11 11h106v9H11z" />
+                    <path fill="#00618a"
+                      d="M54.2 66.4c.8 6.8 1.1 13.1 1.1 21.6v16h9V88c0-8.5.3-14.8 1.1-21.6 1.1-9.4 3.6-17.3 9-25.2C79 34.8 84.4 28.9 94.1 23H82.4c-6.8 5.1-11.4 10.2-15.3 17.2-2.8 5.1-4.5 10.5-5.6 16.2h-4.9c-1.1-5.7-2.8-11.1-5.6-16.2C47.1 33.2 42.5 28.1 35.7 23H23.9c9.7 5.9 15.1 11.8 19.3 18.2 5.4 7.9 9 15.8 11 25.2z" />
+                  </svg>
+                </span>
+                <span class="tech-name">MySQL</span>
+              </li>
+
+              <!-- Antigravity (AI tool) -->
+              <li class="tech-item">
+                <span class="tech-icon tech-icon--ai" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <defs>
+                      <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#b3477a" />
+                        <stop offset="100%" style="stop-color:#7658b5" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="12" cy="12" r="10" fill="url(#aiGrad)" />
+                    <circle cx="12" cy="12" r="3.5" fill="none" stroke="white" stroke-width="1.5" />
+                    <ellipse cx="12" cy="12" rx="8.5" ry="3.5" fill="none" stroke="white" stroke-width="1.2"
+                      transform="rotate(-35 12 12)" />
+                    <circle cx="18.8" cy="7.5" r="1.3" fill="white" />
+                  </svg>
+                </span>
+                <span class="tech-name">Antigravity</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== SKILLS =========================== -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">What I work with</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">
+            The tools and technologies I use to design, build, and ship web projects.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="9 7 4 12 9 17" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="15 7 20 12 15 17" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="HTML5 proficiency: 95 percent">
+                <span class="skill-meter-fill" style="--level: 95%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.6A3.5 3.5 0 0 0 21 10.8C21 6.5 16.9 3 12 3z"
+                  fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="7.5" cy="11" r="1.3" fill="currentColor" />
+                <circle cx="10" cy="7.5" r="1.3" fill="currentColor" />
+                <circle cx="14.5" cy="7.5" r="1.3" fill="currentColor" />
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">CSS3</h3>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="CSS3 proficiency: 92 percent">
+                <span class="skill-meter-fill" style="--level: 92%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <text x="12" y="15.5" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">JS</text>
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="JavaScript proficiency: 85 percent">
+                <span class="skill-meter-fill" style="--level: 85%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <text x="12" y="15" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">C++</text>
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">C++</h3>
+                <span class="skill-level">100%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="C plus plus proficiency: 100 percent">
+                <span class="skill-meter-fill" style="--level: 100%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <text x="12" y="15" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">C#</text>
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">C#</h3>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="C sharp proficiency: 80 percent">
+                <span class="skill-meter-fill" style="--level: 80%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <text x="12" y="15" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">Py</text>
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-level">50%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="Python proficiency: 50 percent">
+                <span class="skill-meter-fill" style="--level: 50%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="2" fill="currentColor" />
+                <ellipse cx="12" cy="12" rx="9" ry="3.8" fill="none" stroke="currentColor" stroke-width="1.5" />
+                <ellipse cx="12" cy="12" rx="9" ry="3.8" fill="none" stroke="currentColor" stroke-width="1.5"
+                  transform="rotate(60 12 12)" />
+                <ellipse cx="12" cy="12" rx="9" ry="3.8" fill="none" stroke="currentColor" stroke-width="1.5"
+                  transform="rotate(120 12 12)" />
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">React / Node.js</h3>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="React and Node dot js proficiency: 80 percent">
+                <span class="skill-meter-fill" style="--level: 80%;"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6.5" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="6.5" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.5" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path d="M6.5 8.5v7M17.5 11.5c0 3-4 2.5-7 4" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" />
+              </svg>
+            </span>
+            <div class="skill-info">
+              <div class="skill-head">
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-meter" role="img" aria-label="Git and GitHub proficiency: 80 percent">
+                <span class="skill-meter-fill" style="--level: 80%;"></span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== EDUCATION =========================== -->
+    <section id="education" class="section education">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">My academic journey</p>
+          <h2 class="section-title">Education</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-period">2022 &ndash; 2026</span>
+              <h3 class="timeline-degree">BS Software Engineering</h3>
+              <p class="timeline-institute">University of Sialkot</p>
+              <p class="timeline-detail">
+                Built a strong foundation in software design, requirements documentation,
+                database fundamentals, and full-stack development &mdash; with a focus on
+                front-end technologies and modern web application development.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-period">2021 &ndash; 2022</span>
+              <h3 class="timeline-degree">Intermediate in FSc Pre-Engineering</h3>
+              <p class="timeline-institute">Nimble Institute of Modern Studies (NIMS)</p>
+              <p class="timeline-detail">
+                Studied mathematics, physics, and chemistry &mdash; building the analytical
+                and problem-solving foundation that led me toward software engineering.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-period">2019 &ndash; 2021</span>
+              <h3 class="timeline-degree">Matriculation in Science</h3>
+              <p class="timeline-institute">The Education City School (ECS)</p>
+              <p class="timeline-detail">
+                Completed secondary education with a focus on science subjects, where my
+                interest in technology and computing first began to grow.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================== PROJECTS =========================== -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Things I have built</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">
+            Three real products I designed, coded, and shipped from scratch.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Aria — AI Voice Assistant -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/project1.png"
+                alt="Screenshot of the Aria AI voice assistant dashboard with its glowing microphone orb" width="1672"
+                height="941" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aria &mdash; AI Voice Assistant</h3>
+              <p class="project-description">
+                A real-time AI voice assistant that listens, thinks, and speaks back &mdash;
+                pairing ElevenLabs speech (STT + TTS) with an OpenAI-compatible LLM, in a
+                polished Streamlit dashboard with an interruptible, full-duplex agent mode.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>Python</li>
+                <li>Streamlit</li>
+                <li>ElevenLabs API</li>
+                <li>LLM APIs</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Laiba-coder-dev/Python-Voice-Assistant" target="_blank"
+                  rel="noopener noreferrer" class="project-link">
+                  <svg viewBox="0 0 24 24" class="link-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12"
+                      y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                      font-family="Inter, sans-serif">GH</text>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Zelvox — Shopify Storefront Theme -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/project2.png"
+                alt="Screenshot of the Zelvox Shopify storefront hero with its lavender phone mockup" width="1913"
+                height="822" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Zelvox &mdash; Shopify Storefront Theme</h3>
+              <p class="project-description">
+                A production-ready Shopify Online Store 2.0 theme for a premium gadget retailer
+                &mdash; pairing a cinematic CSS-3D hero with a full commerce layer: quick add,
+                cart drawer, variant picking, wishlist, and predictive search.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>Shopify Liquid</li>
+                <li>OS 2.0</li>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript ES6+</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Laiba-coder-dev/Zelvox-Shopify-Store" target="_blank"
+                  rel="noopener noreferrer" class="project-link">
+                  <svg viewBox="0 0 24 24" class="link-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12"
+                      y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                      font-family="Inter, sans-serif">GH</text>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ProjectSync — FYP Portal -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/project3.png" alt="Screenshot of the ProjectSync FYP Portal interface" width="1816"
+                height="866" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ProjectSync &mdash; FYP Portal</h3>
+              <p class="project-description">
+                A web-based Final Year Project management platform built with React, TypeScript,
+                and Firebase &mdash; streamlining project submissions, supervision, progress
+                tracking, evaluations, and panel scheduling in one centralized, portable system.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>React 18</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Laiba-coder-dev/ProjectSync-FYP-Portal" target="_blank"
+                  rel="noopener noreferrer" class="project-link">
+                  <svg viewBox="0 0 24 24" class="link-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12"
+                      y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                      font-family="Inter, sans-serif">GH</text>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== CONTACT =========================== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Let&rsquo;s talk</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">
+            Have a project in mind, an internship opportunity, or just want to say hello?
+            My inbox is always open.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor"
+                      stroke-width="1.8" />
+                    <path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="contact-label">Email</h3>
+                  <a href="mailto:laibamudassir97@gmail.com" class="contact-value">laibamudassir97@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="7" y="2.5" width="10" height="19" rx="2.5" fill="none" stroke="currentColor"
+                      stroke-width="1.8" />
+                    <line x1="10.5" y1="18.5" x2="13.5" y2="18.5" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="contact-label">Phone</h3>
+                  <a href="tel:+923028610277" class="contact-value">+92 302 8610277</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2.5a7 7 0 0 0-7 7c0 5 7 12 7 12s7-7 7-12a7 7 0 0 0-7-7z" fill="none"
+                      stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                    <circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="contact-label">Location</h3>
+                  <p class="contact-value">College Road, Daska, Pakistan</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-socials">
+              <h3 class="contact-socials-title">Find me online</h3>
+              <ul class="contact-social-list" aria-label="Social profiles">
+                <li>
+                  <a href="https://github.com/Laiba-coder-dev" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="GH — GitHub profile">
+                    <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12"
+                        y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                        font-family="Inter, sans-serif">GH</text>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/laiba-mudassir-345454294" target="_blank"
+                    rel="noopener noreferrer" class="social-link" aria-label="in — LinkedIn profile">
+                    <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor"
+                        stroke-width="1.8" /><text x="12" y="16" text-anchor="middle" font-size="10" font-weight="700"
+                        fill="currentColor" font-family="Inter, sans-serif">in</text>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-field">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="jane@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship opportunity"
+                required>
+            </div>
+
+            <div class="form-field">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="6"
+                placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-note">This is a UI-only contact form &mdash; no data is stored or sent.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">Laiba<span class="brand-accent">.</span></a>
+        <p class="footer-tagline">
+          Frontend Developer crafting clean, responsive, and user-friendly web experiences
+          with React, JavaScript, and modern web technologies.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="contact-social-list" aria-label="Social profiles">
+          <li>
+            <a href="https://github.com/Laiba-coder-dev" target="_blank" rel="noopener noreferrer" class="social-link"
+              aria-label="GH — GitHub profile">
+              <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" /><text x="12" y="16"
+                  text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">GH</text>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/laiba-mudassir-345454294" target="_blank" rel="noopener noreferrer"
+              class="social-link" aria-label="in — LinkedIn profile">
+              <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <text x="12" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="currentColor"
+                  font-family="Inter, sans-serif">in</text>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:laibamudassir97@gmail.com" class="social-link" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Laiba Mudassir &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
